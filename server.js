@@ -7,6 +7,8 @@ var path = require('path');
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8445;
 var ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
+console.log(process.env);
+
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
